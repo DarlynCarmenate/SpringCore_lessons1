@@ -1,8 +1,10 @@
-package ru.tregulov.first;
+//конфигурация с помощью xml-файла
+
+package ru.tregulov.first.springContainer;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-public class Test2 {
+public class Test1_applicationContext1 {
     public static void main(String[] args) {
         ClassPathXmlApplicationContext context =
                 new ClassPathXmlApplicationContext("applicationContext.xml");

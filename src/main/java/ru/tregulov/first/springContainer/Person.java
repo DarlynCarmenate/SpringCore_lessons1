@@ -1,13 +1,28 @@
-package ru.tregulov.first;
+package ru.tregulov.first.springContainer;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
-@Component("myPerson")
+//@Component("myPerson")
 public class Person {
+//    @Autowired
+//    @Qualifier("cat")
     private Pet pet;
+    @Value("${person.surname}")
     private String surname;
+    @Value("${person.age}")
     private int age;
+
+//    @Autowired
+//    public Person(@Qualifier("myDog") Pet pet) {
+//        this.pet = pet;
+//    }
+
+    public Person(Pet pet) {
+        this.pet = pet;
+    }
 
     public Pet getPet() {
         return pet;
@@ -31,11 +46,6 @@ public class Person {
 
     public void setAge(int age) {
         this.age = age;
-    }
-
-    @Autowired
-    public Person(Pet pet) {
-        this.pet = pet;
     }
 
 //    public Person() {}
