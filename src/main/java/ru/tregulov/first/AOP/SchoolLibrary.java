@@ -15,9 +15,10 @@ public class SchoolLibrary extends Library{
         System.out.println("______________________________________");
     }
 
-    public void returnBook() {
+    public String returnBook() {
+        int a = 10/0;
         System.out.println("Returned a book to college");
-        System.out.println("______________________________________");
+        return "Война и мир";
     }
 
     public void returnMagazine() {
