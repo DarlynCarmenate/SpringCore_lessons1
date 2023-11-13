@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>ru.tregulov.first</groupId>
-  <artifactId>tregulov_one</artifactId>
+  <artifactId>spring_aop</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>jar</packaging>
 
